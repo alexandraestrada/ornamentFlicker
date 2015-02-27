@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ornament Twinkle/title>
+	<meta charset=utf-8>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type='text/javascript' src='script.js'></script>
+	<style>
+		body #mainContainer {
+			width:2185px;
+			height:2070px;
+			/*margin:0 auto;*/		
+		}
+		div {
+			display: inline-block;
+			float:left;
+		}
+		#col1 {
+			background-color:black;
+			width:639px;
+			height:2070px;
+			border: 1px solid black;
+			position:relative;
+		}
+		#col2 {
+			width:901px;
+			height:2070px;
+		}
+		#col3 {
+			background-color:black;
+			width:639px;
+			height:2070px;
+		}
+		#ornCol1, #ornCol2 {
+			width:40px;
+			height:2070px;
+			float:right;
+			padding-right:5px;
+
+		}
+		#ornCol2 {
+			float:left;
+			padding-left:5px;
+		}
+
+		.ornament {
+			float:left;
+			width:22px;
+			height:22px;
+			display:block;
+			border-radius:100px;
+			margin:15px;
+		}
+		.ornament:nth-child(odd) {
+    		background-color: red;
+    		margin-left:10px; 
+    	}
+    	.ornament:nth-child(even) {
+    		background-color: #00CC00;
+    	}
+    	.colorChange:nth-child(odd){
+    		background-color:#00CC00;
+    		margin-left:10px; 
+    	}
+    	.colorChange:nth-child(even){
+    		background-color:red;   		
+    	}
+	</style>
+
+</head>
+<body>
+	<div id="mainContainer">
+		<div id="col1">
+			<div id="ornCol1"></div>
+		</div>
+		<div id="col2">	
+		</div>
+		<div id="col3">
+		<div id="ornCol2"></div></div>
+	</div>
+</body>
+</html>
